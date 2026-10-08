@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a reproducible problem with LapCont or its documentation.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check the README's troubleshooting and remaining work before filing.
+        Remove pairing QR contents, private keys, tokens and personal details from screenshots and logs.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected area
+      options:
+        - Android app
+        - Windows companion or service
+        - Pairing or connection
+        - Live view or audio
+        - Bluetooth proximity
+        - Relay or optional notifications
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: App build and environment
+      description: Include the app version/package, Windows/Android versions and local-network or relay connection type. For documentation, include the page or section.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the actions that lead to the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+      description: Explain what you expected, what happened and whether it happens every time.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Error text or screenshots
+      description: Optional evidence with private details removed.

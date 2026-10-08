@@ -1,17 +1,25 @@
-# LapCont — Laptop Control from Your Android Phone
+# LapCont
 
-**Pair your phone with your Windows PC, control permitted features, and keep access in your hands.**
+**Control your Windows PC from your Android phone.**
+
+![Windows 11](https://img.shields.io/badge/Windows-11-0078D4?style=flat-square)
+![Android 10 and newer](https://img.shields.io/badge/Android-10%2B-3DDC84?style=flat-square)
+![Version 0.1.0 test build](https://img.shields.io/badge/version-0.1.0%20test%20build-F59E0B?style=flat-square)
+[![MIT License](https://img.shields.io/badge/license-MIT-8B5CF6?style=flat-square)](LICENSE)
+
+[Get started](#install-and-pair) · [How it works](#how-the-app-works) · [Test results](#testing-status) · [Troubleshooting](#troubleshooting)
 
 LapCont connects an Android app to a Windows service and desktop companion. It provides remote PC locking, verified Windows session events, live camera and microphone access, phone-to-PC push-to-talk, and Bluetooth proximity protection. A self-hosted relay and optional Firebase notifications extend the design beyond the local network.
 
-**Current version: 0.1.0 test build · Updated 6 October 2026**
+Pair once, choose what your phone may access, then open your saved PC to connect. The Windows owner keeps control through individual permissions and a visible **Stop all media** button.
 
-The baseline application is implemented and selected features have passed emulator and real-device tests. Full release acceptance remains in progress. The latest interface update has passed local checks and still needs installation and verification on the physical phone.
+**Version:** 0.1.0 test build · **Documentation updated:** 8 October 2026 · **Latest recorded tests:** 6 October 2026
 
 > **Windows unlock:** Request unlock sends a sign-in request or reminder. You still sign in normally at your PC. LapCont does not bypass Windows authentication or automatically unlock the session.
 
 ## Contents
 
+- [Project status](#project-status)
 - [Features](#features)
 - [How the app works](#how-the-app-works)
 - [Requirements](#requirements)
@@ -22,8 +30,23 @@ The baseline application is implemented and selected features have passed emulat
 - [Testing status](#testing-status)
 - [Security and privacy](#security-and-privacy)
 - [Troubleshooting](#troubleshooting)
+- [Frequently asked questions](#frequently-asked-questions)
 - [Remaining work](#remaining-work)
+- [Contributing](#contributing)
 - [License](#license)
+
+## Project status
+
+| Area | Current status |
+|---|---|
+| Implementation | The baseline app is implemented in the development workspace. |
+| Verified behavior | Selected emulator and real-device checks passed; see the dated [test results](#testing-status). |
+| Latest interface | Local UI checks passed. Installation on the physical phone and on-screen Windows acceptance remain pending. |
+| Bluetooth auto-lock | Implemented; normal physical walk-away and return acceptance remains pending. |
+| GitHub contents | Project documentation, the MIT license and repository settings. App source publication is pending. |
+| Downloads | Test APK and Windows ZIP packages exist locally. GitHub release downloads are not published yet. |
+
+Full release acceptance remains in progress. Build commands below apply to the full implementation workspace; cloning this documentation repository alone does not provide a buildable app.
 
 ## Features
 
@@ -98,7 +121,7 @@ The following packages have been generated in the development workspace:
 | `LapCont-UI-optionalPush-debug.apk` | Debug variant that includes the optional Firebase addon. |
 | `LapCont-UI-optionalPush-release-unsigned.apk` | Optimized unsigned variant with the optional Firebase addon. |
 
-**GitHub publication:** this repository currently provides the project overview. The implementation source and generated packages remain in the development workspace; APK/ZIP downloads have not been published as GitHub release assets.
+**Package availability:** these filenames describe local test packages. Downloadable APK/ZIP releases will be linked here after publication.
 
 ### Windows
 
@@ -257,6 +280,8 @@ The race detector needs CGO and a supported C compiler. The relay uses operator-
 
 ## Testing status
 
+The results below were recorded on **6 October 2026**. This documentation update adds no new app test results.
+
 ### Latest UI update
 
 | Check | Recorded result |
@@ -308,6 +333,28 @@ Those results retain their original build scope. The newest UI APK has not been 
 | Back closes the app from a child screen | Use the latest UI build; pairing, scanner, nested settings and Live view Back paths have regression coverage. |
 | Installer rejects an existing service | It is a fresh-install script. Use the UI companion update procedure or a separately planned installed upgrade. |
 
+## Frequently asked questions
+
+**Can I unlock Windows from the phone?**
+
+Request unlock sends a sign-in request or reminder. Complete normal Windows sign-in on the PC.
+
+**Can I use LapCont away from the PC?**
+
+Direct connections need a reachable PC on the network. Connections across separate networks require the optional operator-managed relay; real WAN acceptance remains pending.
+
+**Does Bluetooth automatically lock the PC now?**
+
+The feature is implemented and requires explicit enablement, healthy observation and calibration. Physical walk-away/return acceptance for the latest repair is still pending.
+
+**Can one phone pair with several PCs?**
+
+Yes. Manual controls support multiple saved PCs. Proximity advertising selects one PC at a time.
+
+**Where are the source code and downloads?**
+
+They remain in the development workspace. This repository currently publishes documentation and repository support files. Source code and release assets will be added separately.
+
 ## Remaining work
 
 - Install the newest UI/advertising repair on the physical phone and complete normal live-media Back testing.
@@ -319,6 +366,12 @@ Those results retain their original build scope. The newest UI APK has not been 
 - Complete production signing and runtime/dependency servicing review before production distribution.
 - Publish the implementation source and release assets.
 
+## Contributing
+
+Documentation improvements and reproducible bug reports are welcome. Read the [contribution guide](CONTRIBUTING.md), then use the [bug report or feature request forms](https://github.com/sgshiv001/LAPCONT/issues/new/choose).
+
+Include the app build, Windows/Android version, steps to reproduce and observed behavior. Keep test results tied to the build and date that produced them.
+
 ## License
 
-LapCont application source uses the **MIT License**. Native libraries and dependencies retain their upstream licenses. The implementation includes `LICENSE`, `THIRD_PARTY_NOTICES.md` and a `licenses/` directory; generated packages include the relevant notices.
+LapCont uses the [MIT License](LICENSE). Native libraries and dependencies retain their upstream licenses. The full implementation includes `THIRD_PARTY_NOTICES.md` and a `licenses/` directory; generated packages include the relevant notices.

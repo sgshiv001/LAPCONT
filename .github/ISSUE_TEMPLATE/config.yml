@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Setup and troubleshooting
+    url: https://github.com/sgshiv001/LAPCONT/blob/main/README.md#troubleshooting
+    about: Review setup steps and common pairing, connection and media problems.
+  - name: Test status and remaining work
+    url: https://github.com/sgshiv001/LAPCONT/blob/main/README.md#testing-status
+    about: Check recorded results and pending acceptance checks.

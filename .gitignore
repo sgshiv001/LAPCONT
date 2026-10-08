@@ -1,0 +1,45 @@
+# Local tools, editor settings and build output
+.tools/
+.vs/
+.idea/
+.gradle/
+.kotlin/
+**/.gradle/
+**/.kotlin/
+**/bin/
+**/obj/
+**/build/
+**/TestResults/
+local.properties
+*.user
+*.suo
+
+# Generated packages, native libraries and runtime state
+artifacts/
+*.apk
+*.aab
+*.log
+android/app/src/main/jniLibs/
+android/app/src/main/assets/notices/
+android/mobile/src/main/jniLibs/
+android/mobile/src/main/assets/notices/
+archive/superseded-draft/
+
+# Local credentials and signing material
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.dpapi
+*.jks
+*.keystore
+*.key
+google-services.json
+service-account.json
+secrets/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
