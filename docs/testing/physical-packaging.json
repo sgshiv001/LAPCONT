@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "generated_utc": "2026-10-05T18:59:53.898438+00:00",
+  "sha256": "982fa266f3155999654271772a29b38f277640079e94ba4974a4386d4d386183",
+  "debug_key_only": true,
+  "zip_16k": true,
+  "native": [
+    {
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libimage_processing_util_jni.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libjnidispatch.so",
+      "load_alignment": [
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libopus.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libsurface_util_jni.so",
+      "load_alignment": [
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/x86_64/libandroidx.graphics.path.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/x86_64/libimage_processing_util_jni.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/x86_64/libjnidispatch.so",
+      "load_alignment": [
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/x86_64/libopus.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/x86_64/libsurface_util_jni.so",
+      "load_alignment": [
+        16384,
+        16384
+      ]
+    }
+  ],
+  "notice_files": 13,
+  "private_fixture_entries": 0,
+  "physical_optimized_release_smoke": "passed finite normal UI Start/Stop and three Refreshes on physical API36 ARM64",
+  "physical_smoke_evidence": "physical-optimized-current.json",
+  "decoded_frames_and_audibility_inferred": false
+}

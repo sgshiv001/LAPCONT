@@ -1,0 +1,12 @@
+{
+  "request_unlock_kept_locked_assertion_reached": true,
+  "normal_sign_in": "unverified",
+  "recorded_utc": "2026-10-03T20:26:54.6771082Z",
+  "evidence_checkpoint": "SCM lock confirmed; normal Windows sign-in required",
+  "accepted_then_completed_assertion_reached": true,
+  "locked_capture_denial_assertion_reached": true,
+  "network": "physical-arm64-usb-adb-reverse",
+  "capture_stopped_on_lock_assertion_reached": true,
+  "status": "partial: lock assertions passed; normal sign-in wait timed out",
+  "actual_scm_lock_assertion_reached": true
+}

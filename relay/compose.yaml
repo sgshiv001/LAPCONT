@@ -1,0 +1,17 @@
+# LapCont — Relay — Mount operator TLS certificates and independently provisioned route hashes
+# License: MIT
+services:
+  relay:
+    build: .
+    ports: ["8443:8443"]
+    command: ["--tls-cert", "/certs/fullchain.pem", "--tls-key", "/certs/privkey.pem", "--credentials", "/secrets/routes.json", "--revocations", "/state/revoked.json"]
+    volumes:
+      - ./certs:/certs:ro
+      - ./secrets:/secrets:ro
+      - relay-state:/state
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
+volumes:
+  relay-state:

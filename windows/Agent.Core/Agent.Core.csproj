@@ -1,0 +1,2 @@
+<!-- LapCont — Core — Platform-independent authorization and policy; License: MIT -->
+<Project Sdk="Microsoft.NET.Sdk"><ItemGroup><ProjectReference Include="../Agent.Protocol/Agent.Protocol.csproj" /><ProjectReference Include="../Agent.Security/Agent.Security.csproj" /></ItemGroup></Project>

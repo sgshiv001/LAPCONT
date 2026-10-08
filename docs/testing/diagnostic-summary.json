@@ -1,0 +1,50 @@
+[
+  {
+    "Name": "capture failed session=1 code=SharpGenException",
+    "Count": 1
+  },
+  {
+    "Name": "capture failed session=1 code=TimeoutException",
+    "Count": 1
+  },
+  {
+    "Name": "capture failed session=3 code=IOException:80131620",
+    "Count": 2
+  },
+  {
+    "Name": "channel=control error=AuthenticationException hresult=80131501 inner=",
+    "Count": 4
+  },
+  {
+    "Name": "channel=control error=IOException hresult=80131620 inner=WebSocketException",
+    "Count": 26
+  },
+  {
+    "Name": "channel=media error=IOException hresult=80131620 inner=WebSocketException",
+    "Count": 15
+  },
+  {
+    "Name": "channel=media error=ObjectDisposedException hresult=80131622 inner=",
+    "Count": 2
+  },
+  {
+    "Name": "channel=pair error=WebSocketException",
+    "Count": 1
+  },
+  {
+    "Name": "coordinator started; lock state reconstructed through WTSINFOEX or explicitly unknown",
+    "Count": 11
+  },
+  {
+    "Name": "coordinator started; verified session lock state unknown until Windows reports an event",
+    "Count": 2
+  },
+  {
+    "Name": "IPC control session=3 error=EndOfStreamException",
+    "Count": 5
+  },
+  {
+    "Name": "IPC media session=3 error=EndOfStreamException",
+    "Count": 5
+  }
+]

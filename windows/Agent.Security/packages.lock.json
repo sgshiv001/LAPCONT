@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net8.0": {
+      "agent.protocol": {
+        "type": "Project"
+      }
+    },
+    "net8.0/win-x64": {}
+  }
+}

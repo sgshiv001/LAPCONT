@@ -1,0 +1,11 @@
+{
+  "transport_status": "passed",
+  "duration_target_seconds": 30,
+  "talk_sent_packets": 1530,
+  "pc_talk_state": "idle",
+  "audibility": "owner confirmed hearing spoken phone voice from laptop speakers",
+  "media_recorded": false,
+  "route": "physical saved campus LAN",
+  "test_duration_seconds": 33.619,
+  "owner_heard_voice": true
+}

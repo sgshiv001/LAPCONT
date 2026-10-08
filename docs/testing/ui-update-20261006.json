@@ -1,0 +1,137 @@
+{
+  "status": "UI update built and locally verified; physical acceptance pending",
+  "generated_utc": "2026-10-05T21:35:23.661339+00:00",
+  "windows_regressions": 35,
+  "windows_component_checks": 14,
+  "windows_desktop_input_verified": false,
+  "windows_desktop_limitation": "Lock screen appeared; interaction stopped",
+  "android_unit": {
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "transport_unit": {
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "transport_results_reused": true,
+  "android_ui_profiles": [
+    {
+      "api": 29,
+      "appearance": "light, 130% text",
+      "passed": 6,
+      "skipped_physical": 1,
+      "log": "ui-emulator-api29-large-text.txt"
+    },
+    {
+      "api": 37,
+      "appearance": "light",
+      "passed": 6,
+      "skipped_physical": 1,
+      "log": "ui-emulator-api37-instrumentation.txt"
+    },
+    {
+      "api": 37,
+      "appearance": "dark, 130% text",
+      "passed": 6,
+      "skipped_physical": 1,
+      "log": "ui-emulator-api37-dark-large-text.txt"
+    }
+  ],
+  "android_unique_ui_tests": 6,
+  "optimized_smoke": {
+    "status": "passed",
+    "optimized_apk_sha256": "78815345562c66170b043889fc594ff16d476dd155e3254a7bbcbeb27f92e462",
+    "devices": [
+      {
+        "serial": "emulator-5580",
+        "api": 29,
+        "page_size": 4096,
+        "exact_apk_sha256": "78815345562c66170b043889fc594ff16d476dd155e3254a7bbcbeb27f92e462",
+        "launch": true,
+        "pairing_and_android_back": true,
+        "quick_back_cycles": 3,
+        "app_crash_mentions": 0,
+        "emulator_platform_crashes_excluded": true
+      },
+      {
+        "serial": "emulator-5582",
+        "api": 37,
+        "page_size": 16384,
+        "exact_apk_sha256": "78815345562c66170b043889fc594ff16d476dd155e3254a7bbcbeb27f92e462",
+        "launch": true,
+        "pairing_and_android_back": true,
+        "quick_back_cycles": 3,
+        "app_crash_mentions": 0,
+        "emulator_platform_crashes_excluded": true
+      }
+    ],
+    "physical_device_tested": false
+  },
+  "lint_errors": 0,
+  "lint_warnings": 18,
+  "packages": [
+    {
+      "name": "LapCont-UI.apk",
+      "bytes": 8884010,
+      "mib": 8.472,
+      "sha256": "78815345562c66170b043889fc594ff16d476dd155e3254a7bbcbeb27f92e462",
+      "signed": true,
+      "qa_signing": true,
+      "native_and_zip_16k": true,
+      "notice_files": 13,
+      "physical_installation": false
+    },
+    {
+      "name": "LapCont-UI-debug.apk",
+      "bytes": 43572308,
+      "mib": 41.554,
+      "sha256": "8856f2a43cc6c0e3fcefdb234345188fd77ba124abc1158eb6d43fbc8eb0f50b",
+      "signed": true,
+      "qa_signing": true,
+      "native_and_zip_16k": true,
+      "notice_files": 13,
+      "physical_installation": false
+    },
+    {
+      "name": "LapCont-UI-release-unsigned.apk",
+      "bytes": 8833927,
+      "mib": 8.425,
+      "sha256": "dd10df3095724d659323972e89a793a19b294be2011e0b2054ec94f4024ffd02",
+      "signed": false,
+      "qa_signing": false,
+      "native_and_zip_16k": true,
+      "notice_files": 13,
+      "physical_installation": false
+    },
+    {
+      "name": "LapCont-UI-optionalPush-debug.apk",
+      "bytes": 46853889,
+      "mib": 44.683,
+      "sha256": "fa97ce3e3a93629301b79c6c20f695acb98e7eee1ff4ff60b31d72ebf9c89656",
+      "signed": true,
+      "qa_signing": true,
+      "native_and_zip_16k": true,
+      "notice_files": 13,
+      "physical_installation": false
+    },
+    {
+      "name": "LapCont-UI-optionalPush-release-unsigned.apk",
+      "bytes": 9515745,
+      "mib": 9.075,
+      "sha256": "7ac6cac82d053d236129a3eeb017d444dd1b99390dcefd3048757dbe9f94bc7d",
+      "signed": false,
+      "qa_signing": false,
+      "native_and_zip_16k": true,
+      "notice_files": 13,
+      "physical_installation": false
+    }
+  ],
+  "signing_certificate_sha256": "1493d3ee08648cee8b51655d9c8ae94471bd6835815c11497f66f7010f1e55d6",
+  "real_pc_media_used_in_ui_tests": false,
+  "physical_phone_updated": false,
+  "previously_outstanding_physical_gates_complete": false
+}

@@ -1,0 +1,42 @@
+{
+  "kotlin": {
+    "tests_failed": 0,
+    "tests_passed": 6
+  },
+  "network": "Emulator adb reverse; physical LAN/mobile-data WAN unverified",
+  "windows": {
+    "tests_skipped": 0,
+    "tests_failed": 0,
+    "release_build": "passed; zero warnings/errors",
+    "tests_passed": 35,
+    "duration_ms": 607
+  },
+  "relay": {
+    "race_suite": "passed",
+    "top_level_tests": 10,
+    "subcases": 4
+  },
+  "physical_acceptance": "incomplete; see physical-device-checklist.md",
+  "run_dates": "2026-10-03/2026-10-04 Asia/Kolkata",
+  "android": {
+    "locked_privacy_switch": {
+      "passed": 1,
+      "duration_seconds": 6.589,
+      "local_setting_restored_off": true
+    },
+    "api37": {
+      "matrix_passed": 4,
+      "restored_locked_policy_passed": 1,
+      "policy_duration_seconds": 0.595,
+      "duration_seconds": 45.428
+    },
+    "pairing": "actual local consent passed on both APIs",
+    "revocation": "disposable enrollment tests passed on both APIs",
+    "api29": {
+      "matrix_passed": 4,
+      "restored_locked_policy_passed": 1,
+      "policy_duration_seconds": 0.679,
+      "duration_seconds": 45.261
+    }
+  }
+}

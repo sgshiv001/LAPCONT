@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "android_api": 36,
+  "abi": "arm64-v8a",
+  "package_debuggable": false,
+  "retained_pairing": true,
+  "route": "saved physical LAN",
+  "refresh_repetitions": 3,
+  "normal_ui_start_stop": true,
+  "decoder_frame_count": "not collected by UI smoke",
+  "audibility": "unverified",
+  "media_recorded": false,
+  "apk_sha256": "982fa266f3155999654271772a29b38f277640079e94ba4974a4386d4d386183",
+  "instrumentation_target": "com.lapcont.app",
+  "evidence_local_date": "2026-10-05",
+  "limits": "Finite UI smoke; decoder counts, audibility, end-to-end latency and sustained performance unmeasured. Android intentionally stops the product at instrumentation boundaries. A subsequent self-targeting helper experiment failed and was reverted."
+}

@@ -1,0 +1,10 @@
+<!-- LapCont — Optional push — Explicit opt-in and non-authoritative hints; License: MIT -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application>
+    <provider android:name="com.lapcont.push.PushInitializer" android:authorities="${applicationId}.lapcont-push" android:exported="false" android:initOrder="90" />
+    <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false" />
+    <meta-data android:name="firebase_analytics_collection_enabled" android:value="false" />
+    <service android:name="com.lapcont.push.HintService" android:exported="false"><intent-filter><action android:name="com.google.firebase.MESSAGING_EVENT" /></intent-filter></service>
+    <activity android:name="com.lapcont.push.PushSettingsActivity" android:exported="false" />
+  </application>
+</manifest>

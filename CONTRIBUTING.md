@@ -1,6 +1,6 @@
 # Contributing to LapCont
 
-Thank you for helping improve LapCont. This repository currently contains project documentation and repository support files. The app implementation and generated test packages remain in the development workspace.
+Thank you for helping improve LapCont. This repository contains the Android app, Windows service and companion, optional relay, tests, build scripts and documentation. Read the [README](README.md) for setup and recorded acceptance limits.
 
 ## Documentation changes
 
@@ -29,6 +29,12 @@ Use the [feature request form](https://github.com/sgshiv001/LAPCONT/issues/new?t
 
 ## Source changes
 
-App source contributions and build validation instructions will be expanded when the implementation is published. The current README's build commands describe the full development workspace; this repository alone is not a buildable app.
+1. Explain the problem and intended behavior in an issue or pull request.
+2. Keep each change focused and preserve existing owner permissions and privacy controls.
+3. Follow the pinned toolchains and [build instructions](README.md#build-and-test).
+4. Run the checks relevant to your change: Windows regressions for Windows behavior, Android unit/emulator tests for phone behavior, or relay tests for routing changes.
+5. Include the validation result and any physical checks that remain pending in your pull request.
+
+Generated packages, tool caches, signing keys and deployment credentials do not belong in source commits. The Android Gradle wrapper and dependency lock files are included for reproducible builds.
 
 Contributions use the repository's [MIT License](LICENSE).

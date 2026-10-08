@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "files_verified": 70,
+  "service_before_pid": 0,
+  "service_after_pid": 17000,
+  "identity_unchanged": true,
+  "service_account": "LocalSystem",
+  "finished_utc": "2026-10-05T19:27:36.915713Z",
+  "service_sha256": "ebb4dbe7a628e786aa390ce23b9cd5e41d0929c6c911b3c5e0327576c11bc45f",
+  "companion_sha256": "d363abe16dbb9460e35def31699cb46a7d8374034841e52fbfe44f0c1d393016",
+  "final_stage_matches_install": true
+}

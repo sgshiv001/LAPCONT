@@ -43,10 +43,10 @@ Pair once, choose what your phone may access, then open your saved PC to connect
 | Verified behavior | Selected emulator and real-device checks passed; see the dated [test results](#testing-status). |
 | Latest interface | Local UI checks passed. Installation on the physical phone and on-screen Windows acceptance remain pending. |
 | Bluetooth auto-lock | Implemented; normal physical walk-away and return acceptance remains pending. |
-| GitHub contents | Project documentation, the MIT license and repository settings. App source publication is pending. |
+| GitHub contents | Android and Windows source, the optional relay, tests, build scripts, documentation and license notices. |
 | Downloads | Test APK and Windows ZIP packages exist locally. GitHub release downloads are not published yet. |
 
-Full release acceptance remains in progress. Build commands below apply to the full implementation workspace; cloning this documentation repository alone does not provide a buildable app.
+Full release acceptance remains in progress. Clone this repository for the complete source workspace, then install the toolchains listed in [Build and test](#build-and-test).
 
 ## Features
 
@@ -200,7 +200,7 @@ Firebase is an optional addon enabled with `-PenableFcm=true`. It requires opera
 | Relay | Go and WebSocket routing with independent hashed role credentials. |
 | Optional notifications | Firebase addon and operator-side HTTP v1 sender adapter. |
 
-The implementation workspace is organized as follows. Source publication to this GitHub repository is separate from this documentation update.
+The source workspace is organized as follows:
 
 ```text
 android/
@@ -226,7 +226,14 @@ artifacts/                Generated packages; excluded from source control
 
 ## Build and test
 
-These instructions apply to the full implementation workspace. The current pins are .NET SDK **8.0.425**, Android SDK platform **37**, build tools **36.0.0**, Gradle **9.6.0**, and Android Studio's Java runtime with JVM target **17**. The Go module pins toolchain **1.27.1**.
+Clone the source workspace:
+
+```powershell
+git clone https://github.com/sgshiv001/LAPCONT.git
+Set-Location LAPCONT
+```
+
+The current pins are .NET SDK **8.0.425**, Android SDK platform **37**, build tools **36.0.0**, Gradle **9.6.0**, and Android Studio's Java runtime with JVM target **17**. The Go module pins toolchain **1.27.1**.
 
 ### Windows
 
@@ -353,7 +360,7 @@ Yes. Manual controls support multiple saved PCs. Proximity advertising selects o
 
 **Where are the source code and downloads?**
 
-They remain in the development workspace. This repository currently publishes documentation and repository support files. Source code and release assets will be added separately.
+The complete source is in this repository. Test packages are described in [Install and pair](#install-and-pair); release acceptance is still in progress.
 
 ## Remaining work
 
@@ -364,7 +371,7 @@ They remain in the development workspace. This repository currently publishes do
 - Complete multi-user/RDP, additional Windows edition, clean install/uninstall and recovery checks.
 - Deploy and verify real mobile-data relay operation and optional Firebase delivery.
 - Complete production signing and runtime/dependency servicing review before production distribution.
-- Publish the implementation source and release assets.
+- Complete release acceptance and production distribution.
 
 ## Contributing
 
@@ -374,4 +381,4 @@ Include the app build, Windows/Android version, steps to reproduce and observed 
 
 ## License
 
-LapCont uses the [MIT License](LICENSE). Native libraries and dependencies retain their upstream licenses. The full implementation includes `THIRD_PARTY_NOTICES.md` and a `licenses/` directory; generated packages include the relevant notices.
+LapCont uses the [MIT License](LICENSE). Native libraries and dependencies retain their upstream licenses; see [third-party notices](THIRD_PARTY_NOTICES.md) and the [license files](licenses/). Generated packages include the relevant notices.

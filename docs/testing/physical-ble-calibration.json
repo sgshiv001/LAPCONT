@@ -1,0 +1,18 @@
+{
+  "status": "partial: eight-bucket calibration passed; longer rotation check interrupted",
+  "calibration_samples": 8,
+  "median_rssi": -56,
+  "threshold": -68,
+  "recent_rssi": [
+    -58,
+    -56,
+    -56,
+    -58,
+    -52,
+    -62,
+    -56,
+    -52
+  ],
+  "auto_lock_pause_restored": true,
+  "phone_participation_restored": "Off"
+}

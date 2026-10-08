@@ -1,0 +1,16 @@
+{
+  "status": "owner-confirmed stable LAN after connection ownership fix",
+  "test_date": "2026-10-04",
+  "owner_repeated_refresh_result": "It stays connected",
+  "remote_address": "[private LAN address]",
+  "remote_ports": [
+    44070,
+    44086
+  ],
+  "service_process_id": 28200,
+  "usb_reverse_removed": true,
+  "phone_process_id": 24093,
+  "pairing_preserved": true,
+  "automated_lease_regression": "compiled; corrected QA setup not executed after automation paused",
+  "generated_utc": "2026-10-04T17:35:24.6332877Z"
+}

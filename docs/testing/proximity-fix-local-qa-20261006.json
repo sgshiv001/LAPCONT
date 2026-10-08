@@ -1,0 +1,94 @@
+{
+  "status": "passed local checks; physical fix acceptance pending",
+  "generated_utc": "2026-10-05T20:17:16.855059+00:00",
+  "mobile_regression": {
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "transport": {
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "transport_execution": "unchanged results reused by Gradle",
+  "windows": {
+    "passed": 35,
+    "failed": 0
+  },
+  "relay": {
+    "passed": 10,
+    "race_detector": true
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 18
+  },
+  "packages": [
+    {
+      "name": "LapCont-proximity-fix-debug.apk",
+      "bytes": 43572308,
+      "sha256": "0d94dad6f2bdf81fe2236060d5fcaf07e3640dae374793a7c6076fac90cd2f0f",
+      "native_libraries": 10,
+      "native_and_zip_16k": true,
+      "notice_files": 13,
+      "private_fixture_entries": 0,
+      "installed_on_physical_phone": false,
+      "signed": true,
+      "production_signing": false
+    },
+    {
+      "name": "LapCont-proximity-fix-release-unsigned.apk",
+      "bytes": 8719239,
+      "sha256": "50b49bfc395c6a9bebde81d10bc3460313cd5cc382130bfddeb0afd6a0b6eff6",
+      "native_libraries": 10,
+      "native_and_zip_16k": true,
+      "notice_files": 13,
+      "private_fixture_entries": 0,
+      "installed_on_physical_phone": false,
+      "signed": false,
+      "production_signing": false
+    },
+    {
+      "name": "LapCont-proximity-fix-release-test-signed.apk",
+      "bytes": 8769322,
+      "sha256": "12860f4d3e704ae88da29819e203971ad4bfb85c6e0d74029331f3fc3e83ffe7",
+      "native_libraries": 10,
+      "native_and_zip_16k": true,
+      "notice_files": 13,
+      "private_fixture_entries": 0,
+      "installed_on_physical_phone": false,
+      "signed": true,
+      "production_signing": false
+    },
+    {
+      "name": "LapCont-proximity-fix-optionalPush-debug.apk",
+      "bytes": 46853889,
+      "sha256": "bd6135dab16004ba309f57f67d38edfb5986deda6e8518c00607882c0c39cdba",
+      "native_libraries": 12,
+      "native_and_zip_16k": true,
+      "notice_files": 13,
+      "private_fixture_entries": 0,
+      "installed_on_physical_phone": false,
+      "signed": true,
+      "production_signing": false
+    },
+    {
+      "name": "LapCont-proximity-fix-optionalPush-release-unsigned.apk",
+      "bytes": 9401057,
+      "sha256": "048c6daa032bc536f8287f6ba40e31097e0b9d4ad236163d88a5020be18c98ff",
+      "native_libraries": 12,
+      "native_and_zip_16k": true,
+      "notice_files": 13,
+      "private_fixture_entries": 0,
+      "installed_on_physical_phone": false,
+      "signed": false,
+      "production_signing": false
+    }
+  ],
+  "physical_fix_installed": false,
+  "physical_walk_away_passed": false,
+  "old_physical_tests_apply_to_new_apks": false
+}

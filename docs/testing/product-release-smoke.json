@@ -1,0 +1,14 @@
+{
+  "crash_log": "none observed",
+  "signature": "Android debug key; QA only",
+  "capture_started": false,
+  "backgrounded": true,
+  "apk": "LapCont-release-test-signed.apk",
+  "media_denial": "MEDIA_LOCK_POLICY explanation visible",
+  "verified_windows_state": "locked",
+  "startup": "passed",
+  "optimized": true,
+  "saved_enrollment_connection": "passed",
+  "historical": true,
+  "tested_sha256": "1ec5f646d900828c2cb33fa1d33c7f1a43b57c751194bd2743e805906a6d4433"
+}

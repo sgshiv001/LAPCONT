@@ -1,0 +1,40 @@
+{
+  "lapcont_firewall_rules": 0,
+  "status": "Completed except protected-file deletion blocked by automatic approval review",
+  "windows_authentication_unchanged": true,
+  "retained_protected_files": [
+    "identity.dpapi",
+    "owner-settings.dpapi",
+    "registry.dpapi",
+    "relay-revocations.dpapi",
+    "relay-routes.dpapi"
+  ],
+  "android": [
+    {
+      "product_data_and_keystore_cleared": true,
+      "serial": "emulator-5554",
+      "reverse_4433_removed": true,
+      "avd": "LapCont_API29_QA",
+      "test_package_removed": true
+    },
+    {
+      "product_data_and_keystore_cleared": true,
+      "serial": "emulator-5556",
+      "reverse_4433_removed": true,
+      "avd": "Pixel_10",
+      "test_package_removed": true
+    }
+  ],
+  "automatic_review_reason": "blocked by policy",
+  "private_qa_credentials_removed": false,
+  "manual_cleanup_script": "artifacts/cleanup-private-qa.ps1; not executed",
+  "completed_utc": "2026-10-03T18:48:36.6718930Z",
+  "user_avd_definitions_and_sdk_preserved": true,
+  "port_4433_listeners": 0,
+  "locked_media_setting_restored_off": true,
+  "lapcont_windows_services": 0,
+  "retained_directory": "%USERPROFILE%/AppData\\Local\\LapCont\\Product-QA-20261003-115304",
+  "owned_hosts_stopped": true,
+  "local_stop_invoked": true,
+  "owned_emulators_stopped": true
+}

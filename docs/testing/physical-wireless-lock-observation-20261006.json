@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-10-05T19:58:56.9438019Z",
+  "ended_utc": "2026-10-05T20:01:56.9841164Z",
+  "session_id": 7,
+  "timeout_seconds": 180,
+  "elapsed_seconds": 180.038,
+  "locked_observed": false,
+  "unlocked_after_lock_observed": false,
+  "source": "read-only WTSINFOEX state; no Windows UI or sign-in automation",
+  "proximity_cause_verified": false,
+  "return_reminder_verified": false,
+  "transitions": [
+    {
+      "at_utc": "2026-10-05T19:58:56.9514565Z",
+      "elapsed_seconds": 0.009,
+      "state": "unlocked"
+    }
+  ]
+}

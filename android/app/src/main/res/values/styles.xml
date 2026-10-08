@@ -1,0 +1,2 @@
+<!-- LapCont — Android — Native host theme; License: MIT -->
+<resources><style name="Theme.LapCont" parent="android:style/Theme.Material.NoActionBar"><item name="android:windowLightStatusBar">false</item><item name="android:statusBarColor">#0B1120</item></style></resources>

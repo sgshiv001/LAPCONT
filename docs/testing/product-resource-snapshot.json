@@ -1,0 +1,22 @@
+{
+  "windows": [
+    {
+      "component": "coordinator",
+      "private_bytes": 134930432,
+      "cpu_seconds_since_start": 48.234375,
+      "working_set_bytes": 51421184
+    },
+    {
+      "component": "companion",
+      "private_bytes": 185106432,
+      "cpu_seconds_since_start": 6.6875,
+      "working_set_bytes": 76525568
+    }
+  ],
+  "scenario": "Optimized Android release audio-only UI smoke; one Windows process snapshot, not sustained load",
+  "android": [
+    "                 Total    Dirty    Clean    Dirty    Total     Size    Alloc     Free",
+    "        TOTAL    30386    20132     4400        0   161224    33541    22776     7004",
+    "           TOTAL PSS:    30386            TOTAL RSS:   161224      TOTAL SWAP (KB):        0"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "signature": "Android debug key; QA only",
+  "sha256": "1ec5f646d900828c2cb33fa1d33c7f1a43b57c751194bd2743e805906a6d4433",
+  "notices": [
+    "assets/notices/Apache-2.0.txt",
+    "assets/notices/Go-BSD.txt",
+    "assets/notices/JNA-LICENSE.txt",
+    "assets/notices/JNA-libffi-LICENSE.txt",
+    "assets/notices/NAudio-MIT.txt",
+    "assets/notices/Opus-COPYING.txt",
+    "assets/notices/OpusSharp-MIT.txt",
+    "assets/notices/QRCoder-MIT.txt",
+    "assets/notices/SharpGen-MIT.txt",
+    "assets/notices/THIRD_PARTY_NOTICES.md",
+    "assets/notices/Vortice-MIT.txt",
+    "assets/notices/ZXing-Apache-2.0.txt",
+    "assets/notices/coder-websocket-ISC.txt"
+  ],
+  "zip_alignment_16k": true,
+  "apk": "LapCont-release-test-signed.apk",
+  "native": [
+    {
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "load_segment_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libimage_processing_util_jni.so",
+      "load_segment_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libjnidispatch.so",
+      "load_segment_alignment": [
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libopus.so",
+      "load_segment_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libsurface_util_jni.so",
+      "load_segment_alignment": [
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/x86_64/libandroidx.graphics.path.so",
+      "load_segment_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/x86_64/libimage_processing_util_jni.so",
+      "load_segment_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/x86_64/libjnidispatch.so",
+      "load_segment_alignment": [
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/x86_64/libopus.so",
+      "load_segment_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/x86_64/libsurface_util_jni.so",
+      "load_segment_alignment": [
+        16384,
+        16384
+      ]
+    }
+  ]
+}

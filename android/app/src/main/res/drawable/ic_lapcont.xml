@@ -1,0 +1,10 @@
+<!-- LapCont — Android — Probe launcher icon; License: MIT -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp" android:height="48dp"
+    android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="#163C49" android:pathData="M0,0h48v48h-48z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M9,11h30v22h-30z" />
+    <path android:fillColor="#163C49" android:pathData="M12,14h24v16h-24z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M5,35h38v3h-38z" />
+    <path android:fillColor="#58D8B2" android:pathData="M24,17l7,3v5c0,4 -7,8 -7,8s-7,-4 -7,-8v-5z" />
+</vector>

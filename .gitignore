@@ -35,11 +35,19 @@ archive/superseded-draft/
 *.jks
 *.keystore
 *.key
+*.pem
+*.token
+*.idsig
+*.dmp
 google-services.json
 service-account.json
 secrets/
+/relay/certs/
 
 # OS metadata
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Legacy local GitHub checkout; the app workspace is now the primary repository.
+/LAPCONT/

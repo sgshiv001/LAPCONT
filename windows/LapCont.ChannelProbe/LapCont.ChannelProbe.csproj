@@ -1,0 +1,4 @@
+<!-- LapCont — Channel probe — Local TLS-over-WSS interoperability host; License: MIT -->
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup><ProjectReference Include="../Agent.Security/Agent.Security.csproj" /></ItemGroup>
+</Project>

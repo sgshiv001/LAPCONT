@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <queries><package android:name="com.lapcont.app" /></queries>
+  <application android:label="LapCont finite QA" android:allowBackup="false" />
+  <instrumentation android:name="com.lapcont.qa.ReleaseSmokeInstrumentation" android:targetPackage="com.lapcont.app" android:label="LapCont own-app release smoke" android:functionalTest="true" />
+</manifest>

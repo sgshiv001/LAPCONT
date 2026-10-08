@@ -1,0 +1,10 @@
+{
+  "status": "applied through normal local PC permission controls",
+  "target": "single enrolled phone after owner-confirmed fresh pairing",
+  "camera": true,
+  "microphone": true,
+  "phone_talk_back": true,
+  "proximity_participation_changed": false,
+  "other_phone_rows_changed": false,
+  "generated_utc": "2026-10-05T19:36:45.4311049Z"
+}
