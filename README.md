@@ -44,7 +44,7 @@ Pair once, choose what your phone may access, then open your saved PC to connect
 | Latest interface | Local UI checks passed. Installation on the physical phone and on-screen Windows acceptance remain pending. |
 | Bluetooth auto-lock | Implemented; normal physical walk-away and return acceptance remains pending. |
 | GitHub contents | Android and Windows source, the optional relay, tests, build scripts, documentation and license notices. |
-| Downloads | Test APK and Windows ZIP packages exist locally. GitHub release downloads are not published yet. |
+| Downloads | Android APK, Windows ZIP, optional relay packages and checksums are available in the [test release](https://github.com/sgshiv001/LAPCONT/releases/tag/v0.1.0-test.1). |
 
 Full release acceptance remains in progress. Clone this repository for the complete source workspace, then install the toolchains listed in [Build and test](#build-and-test).
 
@@ -110,7 +110,15 @@ The installed listener uses TCP **4433** by default. The standard firewall rule 
 
 ### Available test packages
 
-The following packages have been generated in the development workspace:
+Download [**LapCont 0.1.0 — Test build 1**](https://github.com/sgshiv001/LAPCONT/releases/tag/v0.1.0-test.1):
+
+- [Android APK](https://github.com/sgshiv001/LAPCONT/releases/download/v0.1.0-test.1/LapCont-UI.apk)
+- [Windows package](https://github.com/sgshiv001/LAPCONT/releases/download/v0.1.0-test.1/LapCont-Windows-UI-v0.1.0.zip)
+- [Package checksums](https://github.com/sgshiv001/LAPCONT/releases/download/v0.1.0-test.1/SHA256SUMS.txt)
+
+The APK uses the existing QA/debug signing identity. This is a test prerelease; physical and production acceptance remains pending. See [release notes](docs/releases/v0.1.0-test.1.md) for package scope and [setup](docs/setup.md) for detailed installation.
+
+The development workspace also produces the following build variants:
 
 | File | Purpose |
 |---|---|
@@ -121,7 +129,7 @@ The following packages have been generated in the development workspace:
 | `LapCont-UI-optionalPush-debug.apk` | Debug variant that includes the optional Firebase addon. |
 | `LapCont-UI-optionalPush-release-unsigned.apk` | Optimized unsigned variant with the optional Firebase addon. |
 
-**Package availability:** these filenames describe local test packages. Downloadable APK/ZIP releases will be linked here after publication.
+Debug, unsigned and optional-push APK variants can be built from source; the linked test release contains the optimized QA APK, Windows package and optional relay builds.
 
 ### Windows
 
@@ -183,6 +191,8 @@ Signal strength is an estimate, not a distance measurement. Physical walk-away/r
 ### Optional internet relay and notifications
 
 An operator can deploy the Go relay with a trusted TLS certificate, hash-only route credentials and persistent revocation storage. The PC connects outbound. Agent and phone credentials are provisioned separately through their connection settings; keep tokens out of URLs and source control.
+
+Optional relay binaries for Linux x64 and Windows x64 are included in the [test release](https://github.com/sgshiv001/LAPCONT/releases/tag/v0.1.0-test.1). Operator setup and real WAN acceptance are still required.
 
 Firebase is an optional addon enabled with `-PenableFcm=true`. It requires operator project/sender setup and opt-in. Push messages are hints: the phone checks the authenticated PC channel before presenting authoritative events. Real WAN deployment and Firebase delivery still need acceptance testing.
 
@@ -360,7 +370,7 @@ Yes. Manual controls support multiple saved PCs. Proximity advertising selects o
 
 **Where are the source code and downloads?**
 
-The complete source is in this repository. Test packages are described in [Install and pair](#install-and-pair); release acceptance is still in progress.
+The complete source is in this repository. Download packages from the [test release](https://github.com/sgshiv001/LAPCONT/releases/tag/v0.1.0-test.1) and follow [Install and pair](#install-and-pair). Release acceptance is still in progress.
 
 ## Remaining work
 

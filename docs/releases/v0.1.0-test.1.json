@@ -1,0 +1,26 @@
+{
+  "source_commit": "6c714a905bc1c4ac75800fed3925d68acd549212",
+  "tag": "v0.1.0-test.1",
+  "assets": [
+    {
+      "name": "LapCont-UI.apk",
+      "bytes": 8884010,
+      "sha256": "78815345562c66170b043889fc594ff16d476dd155e3254a7bbcbeb27f92e462"
+    },
+    {
+      "name": "LapCont-Windows-UI-v0.1.0.zip",
+      "bytes": 16614989,
+      "sha256": "4d48c99096a61b9545befc0f6c446c8f02585d75046528c09bf81ebeb5cd8faf"
+    },
+    {
+      "name": "LapCont-relay-linux-x64-v0.1.0.zip",
+      "bytes": 3291357,
+      "sha256": "d2eda1b5d28a501a892ce4acf294a2ed7e71bd8a329b9cd6c22263102abc0f50"
+    },
+    {
+      "name": "LapCont-relay-windows-x64-v0.1.0.zip",
+      "bytes": 3372056,
+      "sha256": "1e4b4a5c2c3509b0510ef075966ecb6da4fbecda1375e71ac66ce10348f67d10"
+    }
+  ]
+}

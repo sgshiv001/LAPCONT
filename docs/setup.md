@@ -8,7 +8,9 @@ at the PC; it never authenticates or unlocks Windows.
 
 ## Windows installation
 
-Use the generated `artifacts/LapCont-Windows-v0.1.0.zip`. Extract into a new folder. Install
+Download `LapCont-Windows-UI-v0.1.0.zip` from the
+[test release](https://github.com/sgshiv001/LAPCONT/releases/tag/v0.1.0-test.1), or generate
+the standard Windows package with `scripts/package-release.ps1`. Extract into a new folder. Install
 the **x64 .NET 8 Desktop Runtime and ASP.NET Core Runtime** first. This package is framework
 dependent; the separate runtimes are excluded from the package size. See Microsoft's
 [runtime downloads](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
@@ -40,10 +42,11 @@ protected with restricted ACLs under `%ProgramData%/LapCont/Service`.
 
 ## Android and pairing
 
-Install `artifacts/LapCont-debug.apk` for testing. The optimized release is provided unsigned
-as `artifacts/LapCont-release-unsigned.apk`; sign it with your own release key before distribution.
-The separately labelled test-signed release, if present, uses the public Android debug key
-and is for QA only. The Android application ID is `com.lapcont.app`; the retained feasibility
+Install `LapCont-UI.apk` from the [test release](https://github.com/sgshiv001/LAPCONT/releases/tag/v0.1.0-test.1).
+This optimized test APK uses the public QA/debug identity. Install over the matching test app
+to preserve pairing. Debug and optimized unsigned variants are also available through the build
+instructions; sign production builds with your own release key before distribution.
+The Android application ID is `com.lapcont.app`; the retained feasibility
 probe uses `com.lapcont.app.phase0`.
 
 1. Put the phone and PC on the same private network. Open the PC companion and choose Pair.
